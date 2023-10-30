@@ -1,0 +1,80 @@
+#this is a quiz game
+
+print("Will you like to play a game?")
+
+answer = input("Yes or no?").lower()
+
+#this checks if the player is interested in the game
+
+if answer == "no":
+  print("Thank you and Goodbye")
+  quit()
+if answer == "yes":
+  print("Welcome to my game!")
+
+
+print("1. What is the largest country in Europe?")
+answer = input("Enter your input here: ").lower()
+if answer != "russia":
+  print("That's wrong!")
+else:
+  print("Correct!")
+
+  
+
+print("2. What countries make up the UK?")
+answer = input("Enter your input here: ").lower()
+#this creates a list of the answer and stores it in a variable
+options = ["northern ireland", "wales", "england", "scotland"]
+
+#this checks if the answer is complete and correct
+for option in options:
+ if option not in answer:
+    print(f"Your answer is {answer} Something's missing!, Try again!")
+    break
+else:
+ print(f"{answer}, that's correct!")
+
+print("3. What is the capital of the USA?")
+answer = input("Enter your input here: ").lower()
+if answer != "washington, d.c":
+  print("That's wrong!")
+else:
+  print("Correct!")
+
+print("4. How many states are in Nigeria?")
+answer = input("Enter your input here: ").lower()
+if answer != "36":
+  print("That's wrong!")
+else:
+  print("Correct!")
+
+print("5.What continent has the most countries?")
+answer = input("Enter your input here: ").lower()
+if answer != "africa":
+  print("That's wrong!")
+else:
+  print("Correct!")
+
+
+
+print("6.List the continents we have")
+answer = input("Enter your input here: ").lower()
+continents = ["africa", "asia", "south america", "north america", "europe", "antartica", "australia"]
+
+for continent in continents:
+  if continent not in answer:
+    print(f" your answer is {answer}, That's wrong!")
+else:
+  print(f"The continents are {answer}, That's Correct!")
+
+
+
+
+
+
+
+
+
+
+
